@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tony</title>
+    <style>
+        body {
+            background: url('./background5.jpg') 0 0 repeat-x;
+            height: 100vh;
+            background-size: 900px 100%;
+            animation: background 10s linear infinite;
+        }
+
+        @keyframes background {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -900px 0;
+            }
+        }
+        .back1 {
+            position: fixed;
+            top: 424px;
+            bottom: 0;
+            margin: auto;
+            background: url('./back2.png') 0 0 repeat;
+            width: 2208px;
+            height: 343px;
+            animation: back 10s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -2208px 0;
+            }
+        }
+
+        .tony {
+            position: fixed;
+            top: 250px;
+            right: 600px;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            background: url('./tony.png') 0 0 no-repeat;
+            width: 256px;
+            height: 256px;
+            animation: walk 1s steps(6) infinite;
+        }
+
+        @keyframes walk {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -1536px 0;
+            }
+        }
+
+        .crow {
+            position: fixed;
+            top: -450px;
+            right: 0;
+            bottom: 0;
+            left: -700px;
+            margin: auto;
+            background: url('./crow.png') 0 0 no-repeat;
+            width: 207.222222222222px;
+            height: 207.6666666666667px;
+            animation: fly 1s steps(9) infinite;
+            transform: scale(0.8);
+        }
+
+        @keyframes fly {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -1865px 0;
+            }
+        }
+
+        .bee {
+            position: fixed;
+            top: -40px;
+            right: -323px;
+            bottom: -230px;
+            left: 0;
+            margin: auto;
+            background: url('./bee.png') 0 0 no-repeat;
+            width: 180px;
+            height: 123px;
+            animation: beefly 0.1s steps(3) infinite;
+            transform: scale(0.25);
+        }
+
+        @keyframes beefly {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -540px 0;
+            }
+        }
+
+        .girl {
+
+            position: fixed;
+            top: 66px;
+            right: 0;
+            bottom: -230px;
+            left: 0;
+            margin: auto;
+            background: url(./girl.png) 0 0 no-repeat;
+            width: 95.71px;
+            height: 130.33px;
+            animation: girlwalk 0.6s steps(7) infinite;
+            transform: scale(1.5);
+        }
+
+        @keyframes girlwalk {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -670px 0;
+            }
+        }
+
+        .casper {
+            position: fixed;
+            top: 178px;
+            right: -200px;
+            bottom: -230px;
+            left: 0;
+            margin: auto;
+            background: url('./casper.png') 0 0 no-repeat;
+            width: 50px;
+            height: 50px;
+            animation: casperwalk 0.4s steps(4) infinite;
+            transform: scale(1.2);
+        }
+
+        @keyframes casperwalk {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -200px 0;
+            }
+        }
+
+        .bird {
+            position: fixed;
+            top: -550px;
+            right: -522px;
+            bottom: -230px;
+            left: 0;
+            margin: auto;
+            background: url('./bird2.png') 0 0 no-repeat;
+            width: 240px;
+            height: 314px;
+            animation: birdfly 1s steps(4) infinite;
+            transform: scaleX(-0.5);
+        }
+
+        @keyframes birdfly {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 0 -1256px;
+            }
+        }
+
+        .panda {
+            position: fixed;
+            top: 214px;
+            right: -522px;
+            bottom: -230px;
+            left: 0;
+            margin: auto;
+            background: url('./panda.png') 0 0 no-repeat;
+            width: 177.777777778px;
+            height: 149px;
+            animation: pandawalk 0.8s steps(9) infinite;
+            transform: scale(0.4);
+        }
+
+        @keyframes pandawalk {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -1600px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tony"></div>
+    <div class="crow"></div>
+    <div class="bee"></div>
+    <div class="girl"></div>
+    <div class="casper"></div>
+    <div class="bird"></div>
+    <div class="panda"></div>
+    <div class="back1"></div>
+</body>
+
+</html>
